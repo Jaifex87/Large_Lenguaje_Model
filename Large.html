@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autocompletado desde tu documento</title>
+    <link rel="stylesheet" href="Large.css">
+</head>
+<body>
+    <main>
+        <h1>Autocompletado</h1>
+        <section class="panel" aria-labelledby="writing-heading">
+            <div class="panel-heading">
+                <h2 id="writing-heading">Escribe con sugerencias</h2>
+                <span class="hint">Usa flecha arriba/abajo para cambiar alguna sugerencia  y Tab o Enter para insertarla.</span>
+            </div>
+            <div class="writing-editor">
+                <textarea id="writing" autocomplete="off" spellcheck="false" aria-label="Texto para autocompletar" placeholder="Empieza a escribir aquí..."></textarea>
+                <div id="writing-mirror" class="writing-mirror" aria-hidden="true"></div>
+                <span id="ghost-suggestion" class="ghost-suggestion" aria-hidden="true"></span>
+            </div>
+            <p id="status" class="status" role="status"></p>
+        </section>
+    </main>
+
+    <script src="advn.js"></script>
+</body>
+</html>
